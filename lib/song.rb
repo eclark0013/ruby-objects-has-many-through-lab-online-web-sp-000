@@ -10,6 +10,7 @@ class Song
     @genre = genre
     @@all<<self
     @artist.songs<<self
+    @genre.songs<<self
   end
 
   def self.all
